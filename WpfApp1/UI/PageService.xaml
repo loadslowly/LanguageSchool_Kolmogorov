@@ -1,0 +1,27 @@
+﻿<Page x:Class="WpfApp1.UI.PageService"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageService">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,20,0,20">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                        <TextBox x:Name="TextSearch" Margin="0,0,20,0"></TextBox>
+                        <Button x:Name="BtnSearch" Margin="0,0,20,0" Click="BtnSearch_Click" >Найти</Button>
+                        <Button x:Name="BtnClear" Margin="0,0,20,0" Click="BtnClear_Click">Очистить</Button>
+                        <Button x:Name="BtnAdd" Click="BtnAdd_Click">Добавить</Button>
+                    </StackPanel>
+                    <CheckBox x:Name="CheckBox" HorizontalAlignment="Center" VerticalAlignment="Center" Click="CheckBox_Click">Сортировать по стоимости</CheckBox>
+                </StackPanel>
+                <ListView MaxWidth="700" x:Name="UCList"></ListView>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
